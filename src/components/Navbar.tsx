@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
               <Wifi className="w-6 h-6 text-foreground" />
             </div>
-            <span className="text-2xl font-bold text-gradient">ConexNet</span>
+            <span className="text-2xl font-bold text-gradient">CLICK-ON</span>
           </div>
 
           {/* Desktop Menu */}

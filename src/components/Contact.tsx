@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
                 <CardTitle className="text-lg">Email</CardTitle>
                 <CardDescription className="text-primary font-semibold">
-                  info@conexnet.com.co
+                  info@click-on.com.co
                 </CardDescription>
               </CardHeader>
             </Card>

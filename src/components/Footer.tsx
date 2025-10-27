@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
                 <Wifi className="w-6 h-6 text-foreground" />
               </div>
-              <span className="text-2xl font-bold text-gradient">ConexNet</span>
+              <span className="text-2xl font-bold text-gradient">CLICK-ON</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Conectamos tu mundo con la mejor tecnología de fibra óptica en Colombia.
@@ -128,7 +128,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm text-muted-foreground">
             <div className="text-center md:text-left">
-              <p>© 2025 ConexNet Colombia. Todos los derechos reservados.</p>
+              <p>© 2025 CLICK-ON Colombia. Todos los derechos reservados.</p>
               <p className="mt-1">
                 Proveedor registrado ante la CRC - Registro RPTC No. 12345
               </p>
