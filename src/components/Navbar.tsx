@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Wifi, Tv, MapPin, HeadphonesIcon, Phone, Gauge } from "lucide-react";
+import { Menu, X, Wifi, Tv, MapPin, HeadphonesIcon, Phone, Gauge, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -56,6 +56,13 @@ const Navbar = () => {
               <span>Test Velocidad</span>
             </button>
             <button
+              onClick={() => scrollToSection("informacion")}
+              className="flex items-center space-x-1 hover:text-primary transition-colors"
+            >
+              <Info className="w-4 h-4" />
+              <span>Información</span>
+            </button>
+            <button
               onClick={() => scrollToSection("soporte")}
               className="flex items-center space-x-1 hover:text-primary transition-colors"
             >
@@ -107,6 +114,13 @@ const Navbar = () => {
             >
               <Gauge className="w-4 h-4" />
               <span>Test Velocidad</span>
+            </button>
+            <button
+              onClick={() => scrollToSection("informacion")}
+              className="flex items-center space-x-2 w-full py-2 hover:text-primary transition-colors"
+            >
+              <Info className="w-4 h-4" />
+              <span>Información</span>
             </button>
             <button
               onClick={() => scrollToSection("soporte")}

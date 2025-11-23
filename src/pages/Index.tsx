@@ -4,6 +4,7 @@ import InternetPlans from "@/components/InternetPlans";
 import TVPackages from "@/components/TVPackages";
 import Coverage from "@/components/Coverage";
 import SpeedTest from "@/components/SpeedTest";
+import ComplianceInfo from "@/components/ComplianceInfo";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <TVPackages />
       <Coverage />
       <SpeedTest />
+      <ComplianceInfo />
       <Contact />
       <Footer />
     </div>
