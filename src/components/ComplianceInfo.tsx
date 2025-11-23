@@ -8,7 +8,7 @@ const ComplianceInfo = () => {
       title: "Procedimientos para presentar una PQR",
       description: "Conoce cómo presentar Peticiones, Quejas y Reclamos de manera fácil y efectiva.",
       icon: FileText,
-      link: "#",
+      link: "/pqr",
     },
     {
       title: "Mecanismos Seguros",
