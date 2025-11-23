@@ -14,7 +14,7 @@ const ComplianceInfo = () => {
       title: "Mecanismos Seguros",
       description: "Información sobre los protocolos de seguridad y protección de datos personales.",
       icon: Shield,
-      link: "#",
+      link: "/mecanismos-seguros",
     },
     {
       title: "Ficha Técnica",
