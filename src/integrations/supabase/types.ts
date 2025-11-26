@@ -14,16 +14,77 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      pqrs: {
+        Row: {
+          created_at: string
+          descripcion: string
+          direccion: string
+          documento_identidad: string
+          email: string
+          estado: Database["public"]["Enums"]["estado_pqr"]
+          fecha_radicado: string
+          fecha_respuesta: string | null
+          id: string
+          nombre_completo: string
+          radicado_number: string
+          respuesta: string | null
+          telefono: string
+          tipo_documento: Database["public"]["Enums"]["tipo_documento"]
+          tipo_solicitud: Database["public"]["Enums"]["tipo_solicitud_pqr"]
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          descripcion: string
+          direccion: string
+          documento_identidad: string
+          email: string
+          estado?: Database["public"]["Enums"]["estado_pqr"]
+          fecha_radicado?: string
+          fecha_respuesta?: string | null
+          id?: string
+          nombre_completo: string
+          radicado_number: string
+          respuesta?: string | null
+          telefono: string
+          tipo_documento: Database["public"]["Enums"]["tipo_documento"]
+          tipo_solicitud: Database["public"]["Enums"]["tipo_solicitud_pqr"]
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          descripcion?: string
+          direccion?: string
+          documento_identidad?: string
+          email?: string
+          estado?: Database["public"]["Enums"]["estado_pqr"]
+          fecha_radicado?: string
+          fecha_respuesta?: string | null
+          id?: string
+          nombre_completo?: string
+          radicado_number?: string
+          respuesta?: string | null
+          telefono?: string
+          tipo_documento?: Database["public"]["Enums"]["tipo_documento"]
+          tipo_solicitud?: Database["public"]["Enums"]["tipo_solicitud_pqr"]
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      generate_radicado_number: { Args: never; Returns: string }
     }
     Enums: {
-      [_ in never]: never
+      estado_pqr: "radicada" | "en_proceso" | "resuelta"
+      tipo_documento: "CC" | "CE" | "NIT" | "Pasaporte" | "TI"
+      tipo_solicitud_pqr: "peticion" | "queja" | "reclamo"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +211,10 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      estado_pqr: ["radicada", "en_proceso", "resuelta"],
+      tipo_documento: ["CC", "CE", "NIT", "Pasaporte", "TI"],
+      tipo_solicitud_pqr: ["peticion", "queja", "reclamo"],
+    },
   },
 } as const
