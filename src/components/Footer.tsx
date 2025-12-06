@@ -91,32 +91,27 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Legal</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="/legal?tab=privacidad" className="hover:text-primary transition-colors">
                   Política de Privacidad
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="/legal?tab=terminos" className="hover:text-primary transition-colors">
                   Términos y Condiciones
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Contrato de Prestación
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="/pqr" className="hover:text-primary transition-colors">
                   PQR - Peticiones y Quejas
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="/legal?tab=derechos" className="hover:text-primary transition-colors">
                   Derechos del Usuario
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="/legal?tab=datos" className="hover:text-primary transition-colors">
                   Tratamiento de Datos
                 </a>
               </li>
