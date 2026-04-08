@@ -7,10 +7,12 @@ import SpeedTest from "@/components/SpeedTest";
 import ComplianceInfo from "@/components/ComplianceInfo";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingPayButton from "@/components/FloatingPayButton";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <FloatingPayButton />
       <Navbar />
       <Hero />
       <InternetPlans />
